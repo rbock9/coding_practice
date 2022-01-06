@@ -211,6 +211,7 @@
 //     }
 // }
 
+
 ////////////////////////////////////////////////////////////////
 // Task: Odd or Even?
 // Given a list of integers, determine whether the sum of its elements is odd or even.
@@ -218,3 +219,15 @@
 // If the input array is empty consider it as: [0] (array with a zero).
 
 // My Solution:
+function oddOrEven(array) {
+    let sum = array.reduce(function (previousValue, currentValue) {
+        return previousValue + currentValue
+      }, 0)
+    if (sum % 2 === 0) {
+        return "even"
+    }
+    return "odd"
+}
+
+
+////////////////////////////////////////////////////////////////
