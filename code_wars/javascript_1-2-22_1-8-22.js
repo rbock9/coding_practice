@@ -219,15 +219,51 @@
 // If the input array is empty consider it as: [0] (array with a zero).
 
 // My Solution:
-function oddOrEven(array) {
-    let sum = array.reduce(function (previousValue, currentValue) {
-        return previousValue + currentValue
-      }, 0)
-    if (sum % 2 === 0) {
-        return "even"
-    }
-    return "odd"
-}
+// function oddOrEven(array) {
+//     let sum = array.reduce(function (previousValue, currentValue) {
+//         return previousValue + currentValue
+//       }, 0)
+//     if (sum % 2 === 0) {
+//         return "even"
+//     }
+//     return "odd"
+// }
+
+
+////////////////////////////////////////////////////////////////
+// Task: Exes and Ohs
+// Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
+
+// My Solution:
+// function XO(str) {
+//     let xArray = []
+//     let oArray = []
+
+//     let strArray = str.toLowerCase().split('')
+//     for (element of strArray) {
+//         if (element === "x") {
+//             xArray.push(element)
+//         }
+//         if (element === "o") {
+//             oArray.push(element)
+//         }
+//     }
+
+//     if (xArray.length === oArray.length) {
+//         return true
+//     }
+//     return false
+// }
+
+
+////////////////////////////////////////////////////////////////
+// Task: Reverse words
+// Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.
+
+// My Solution:
+// function reverseWords(str) {
+//     return str.split("").reverse().join("").split(" ").reverse().join(" ")
+// }
 
 
 ////////////////////////////////////////////////////////////////
