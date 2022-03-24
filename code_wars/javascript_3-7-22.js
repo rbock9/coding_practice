@@ -111,3 +111,16 @@
 // }
 
 // console.log(findOutlier(integers))
+
+
+/////////////
+// Task: String Concatenation
+// Concatenate all the words in a string into one long word.
+
+let myString = "Hello All The People In the World"
+
+function concatString(str) {
+    return str.split(" ").join('')
+}
+
+console.log(concatString(myString))
